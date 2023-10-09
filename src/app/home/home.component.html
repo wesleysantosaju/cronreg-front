@@ -1,0 +1,17 @@
+<!-- src/app/cronometro-regressivo/cronometro-regressivo.component.html -->
+<div class="container">
+  <mat-card class="card">
+    <mat-card-content>
+      <h2>Cronômetro Regressivo</h2>
+      <mat-form-field class="input-field">
+        <input matInput type="number" placeholder="Tempo em Minutos" [(ngModel)]="inputMinutes">
+      </mat-form-field>
+      <div class="button-container">
+        <button mat-raised-button color="primary" (click)="startTimer()" [disabled]="timerRunning">Iniciar</button>
+        <button mat-raised-button color="warn" (click)="stopTimer()" [disabled]="!timerRunning">Parar</button>
+        <button mat-raised-button color="accent" (click)="resetTimer()" [disabled]="!timerRunning">Zerar</button>
+      </div>
+      <div class="timer">{{ displayTime }}</div>
+    </mat-card-content>
+  </mat-card>
+</div>
