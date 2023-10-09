@@ -9,9 +9,10 @@
       <div class="button-container">
         <button mat-raised-button color="primary" (click)="startTimer()" [disabled]="timerRunning">Iniciar</button>
         <button mat-raised-button color="warn" (click)="stopTimer()" [disabled]="!timerRunning">Parar</button>
-        <button mat-raised-button color="accent" (click)="resetTimer()" [disabled]="!timerRunning">Zerar</button>
+        <button mat-raised-button color="accent" (click)="resetTimer()">Zerar</button>
       </div>
       <div class="timer">{{ displayTime }}</div>
     </mat-card-content>
   </mat-card>
+  <audio id="alarmAudio" src="/assets/alarme.mp3" style="display: none;"></audio>
 </div>

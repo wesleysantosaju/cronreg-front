@@ -27,6 +27,7 @@ export class HomeComponent {
           this.displayTime = '00:00:00.000';
           clearInterval(this.interval);
           this.timerRunning = false; // Define o estado da contagem regressiva como false
+          this.playAlarm(); // Chama a função para reproduzir o alarme
         } else {
           this.displayTime = this.formatTime(remainingTime);
         }
@@ -63,5 +64,12 @@ export class HomeComponent {
 
   padMilliseconds(milliseconds: number): string {
     return milliseconds.toString().padStart(3, '0');
+  }
+
+  playAlarm() {
+    const audioElement = document.getElementById('alarmAudio') as HTMLAudioElement;
+    if (audioElement) {
+      audioElement.play();
+    }
   }
 }
