@@ -1,15 +1,14 @@
-/* src/app/cronometro-regressivo/cronometro-regressivo.component.css */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Isso define a altura para ocupar a tela inteira verticalmente */
+  height: 100vh;
 }
 
 .card {
   text-align: center;
   width: 400px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .input-field {

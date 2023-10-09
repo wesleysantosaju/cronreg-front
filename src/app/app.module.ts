@@ -9,8 +9,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms'; // Importe o FormsModule
-import { MatInputModule } from '@angular/material/input'; // Importe o MatInputModule
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 
 
